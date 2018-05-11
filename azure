@@ -1,0 +1,6 @@
+New-AzureRmResourceGroup -Name myResourceGroup -Location EastUS
+$virtualNetwork = New-AzureRmVirtualNetwork `
+  -ResourceGroupName myResourceGroup `
+  -Location EastUS `
+  -Name myVirtualNetwork `
+  -AddressPrefix 10.0.0.0/16
